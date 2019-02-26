@@ -1,6 +1,7 @@
 import React from 'react'
 import {HashRouter, Switch, Route, Redirect} from 'react-router-dom'
 import Login from '@/pages/login/login'
+import Home from '@/pages/home/home'
 
 class RouterConfig extends React.Component{
     render(){
@@ -8,7 +9,8 @@ class RouterConfig extends React.Component{
             <HashRouter>
                 <Switch>
                     <Route path='/login' component={Login}/>
-                    <Redirect extct from="/" to="/login" />
+                    <Route path='/home' component={Home}/>
+                    <Redirect extct from="/" to="/home" />
                 </Switch>
             </HashRouter>
         )

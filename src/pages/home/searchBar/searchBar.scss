@@ -1,0 +1,109 @@
+.searchBar{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding:0 10px;
+    font-size: 14px;
+    background: #f63;
+
+    .switch-locate{
+        .locate-name{
+            display: inline-block;
+            max-width: 54px;
+            color: #fff;
+            vertical-align: middle;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .icon-down-arrow{
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            border: 1px solid #fff;
+            border-top: none;
+            border-left: none;
+            transform: rotate(45deg);
+            margin: -7px 0 0 6px;
+            vertical-align: middle;
+        }
+    }
+
+    .search-wrapper{
+        position: relative;
+        flex: 1 1;
+        margin: 0 10px;
+        padding-left: 25px;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 20px;
+
+        .icon-search{
+            position: absolute;
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            border: 1px solid #b8b8b8;
+            border-radius: 50%;
+            left: 6px;
+            top: 6px;
+            &::before{
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: 8px;
+                height: 1px;
+                background: #b8b8b8;
+                transform: rotate(45deg);
+                left: 8px;
+                top: 12px;
+            }
+        }
+
+        .search-input{
+            width: 100%;
+            height: 30px;
+            line-height: 31px;
+            padding-right:10px;
+            border:0;
+            border-radius: 20px;
+            font-size: 13px;
+            color:#b8b8b8;
+        }
+    }
+
+    .user{
+        position: relative;
+        width: 24px;
+        height: 24px;
+        border:1px solid #fff;
+        border-radius: 50%;
+        overflow: hidden;
+
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 3px;
+            margin: auto;
+            width: 9px;
+            height: 9px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 13px;
+            margin: auto;
+            width: 19px;
+            height: 19px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+        }
+    }
+}

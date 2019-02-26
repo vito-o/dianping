@@ -1,0 +1,60 @@
+$color-bg:#f1f1f1;
+$color-theme:#e9203d;
+
+*{
+    box-sizing: border-box;
+}
+
+html,body,#root{
+    height: 100%;
+}
+
+body{
+    margin:0;
+}
+
+#root{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #f1f1f1;
+}
+
+
+input, button{
+    outline: none;
+}
+
+.input-wrap{
+    padding: 0 10px 0 0;
+    border-radius: 4px;
+    background: #fff;
+
+    .input-icon{
+        float: left;
+        display: inline-block;
+        width: 40px;
+        height:35px;
+        line-height: 35px;
+
+        &.icon-phone{
+            background:url(../img/icon-phone.png) no-repeat center;
+        }
+        &.icon-key{
+            background:url(../img/icon-key.png) no-repeat center;
+        }
+    }
+
+    .input-box{
+        border-radius: 4px;
+        overflow: hidden;
+        input{
+            width: 100%;
+            height: 35px;
+            font-size: 14px;
+            border:0;
+        }
+    }
+}
